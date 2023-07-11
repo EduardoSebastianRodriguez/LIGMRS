@@ -191,24 +191,19 @@ code {
      </tr>
     </table>
 
-        <!--
+
     <br>
 
-    <table align=center width=500px>
+    <table align=center width=300px>
      <tr>
        <td align=center width=100px>
        <center>
-       <span style="font-size:20px"><a href="https://arxiv.org/abs/2209.09702">[Paper]</a></span>
+       <span style="font-size:20px"><a href="https://arxiv.org/abs/2307.04374">[Paper]</a></span>
        </center>
        </td>
        <td align=center width=100px>
        <center>
-       <span style="font-size:20px"><a href="https://upload.wikimedia.org/wikipedia/commons/0/0e/De-Lemure.ogg">[Pronunciation]</a></span>
-       </center>
-       </td>
-       <td align=center width=100px>
-       <center>
-       <span style="font-size:20px"><a href="https://github.com/EduardoSebastianRodriguez/LEMURS">[Code]</a></span>
+       <span style="font-size:20px"><a href="https://github.com/EduardoSebastianRodriguez/LIGMRS">[Code]</a></span>
        </center>
        </td>
 
@@ -216,35 +211,38 @@ code {
   </table>
 
 
+
+
             <br>
             
 
             <br>
-            This paper presents LEMURS, an algorithm for learning scalable multi-robot control policies from cooperative task demonstrations. We propose a port-Hamiltonian description of the multi-robot system to exploit universal physical constraints in interconnected systems and achieve closed-loop stability. We represent a multi-robot control policy using an architecture that combines self-attention mechanisms and neural ordinary differential equations. The former handles time-varying communication in the robot team, while the latter respects the continuous-time robot dynamics. Our representation is distributed by construction, enabling the learned control policies to be deployed in robot teams of different sizes. We demonstrate that LEMURS can learn interactions and cooperative behaviors from demonstrations of multi-agent navigation and flocking tasks.
+            The graph identification problem consists of discovering the interactions among nodes in a network given their state/feature trajectories. This problem is challenging because the behavior of a node is coupled to all the other nodes by the unknown interaction model. Besides, high-dimensional and nonlinear state trajectories make difficult to identify if two nodes are connected. Current solutions rely on prior knowledge of the graph topology and the dynamic behavior of the nodes, and hence, have poor generalization to other network configurations. To address these issues, we propose a novel learning-based approach that combines (i) a strongly convex program that efficiently uncovers graph topologies with global convergence guarantees and (ii) a self-attention encoder that learns to embed the original state trajectories into a feature space and predicts appropriate regularizers for the optimization program. In contrast to other works, our approach can identify the graph topology of unseen networks with new configurations in terms of number of nodes, connectivity or state trajectories. We demonstrate the effectiveness of our approach in identifying graphs in multi-robot formation and flocking tasks.
             <br><br>
 
       <hr>
-            <table align=center width=900>
+            <table align=center width=1000>
              <center><h1>Paper</h1></center>
                 <tr>
-                  <td><a href="https://arxiv.org/pdf/2209.09702.pdf"><img style="height:300px" src="./resources/thumbnail.png"/></a></td>
+                  <td><a href="https://arxiv.org/abs/2307.04374.pdf"><img style="height:300px" src="./resources/thumbnail.png"/></a></td>
                   <td><span style="font-size:14pt">Eduardo Sebastian, Thai Duong, Nikolay Atanasov, Eduardo Montijano and Carlos Sagues<br><br>
-                           LEMURS: Learning Distributed Multi-Robot Interactions<br><br>
-                  IEEE ICRA 2023.<br><br>
-                      <a href="https://arxiv.org/pdf/2209.09702.pdf">[pdf]</a> &nbsp; &nbsp;
+                           Learning to Identify Graphs from Node Trajectories in Multi-Robot Networks<br><br>
+                  Under review at IEEE MRS 2023.<br><br>
+                      <a href="https://arxiv.org/abs/2307.04374.pdf">[pdf]</a> &nbsp; &nbsp;
                     </td>
               </tr>
             </table>
 
       <hr>
-
+<!--
             <table align=center width=900>
              <center><h1>Poster</h1></center>
                 <tr>
                   <td><center><a href="./resources/Poster.pdf"><img style="height:300px" src="./resources/Poster.png"/></a></td>
               </tr>
             </table>
-      
+-->
+<!--
 
       
       
@@ -262,6 +260,8 @@ code {
                     </tr>
                 </table>
                 <br>
+                -->
+<!--
     <hr>
                 <center><h1>Presentation at IEEE ICRA 2023</h1></center>
                 <table align=center width=900px>
@@ -276,6 +276,8 @@ code {
                     </tr>
                 </table>
                 <br>
+        -->
+
           <hr>
           <table align=center width=550px>
             <table align=center width=800>
@@ -283,190 +285,274 @@ code {
                 <tr>
                     <br>
             <br>
-            <table align=center width=600px>
-                <tr>
-                    <td width=600px>
-                      <center>
-                          <a href="./resources/FigureArchitecture.png"><img src = "./resources/FigureArchitecture.png" width="600px"></img></href></a><br>
-                    </center>
-                    </td>
-                </tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:18px"><i>Proposed architecture for LEMURS. Robot i receives information from its neighbors. Then, the self-attention module processes the data to obtain the port-Hamiltonian terms. With this information, robot i computes the learned control policy through an ordinary differential equation solver.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-                <br><br>
-            <table align=center width=1000px>
-               <tr>
-                 <td align=center width=900px>
-                 <center>
-                 <span style="font-size:20px"><a href="./resources/FixedSwapping.png"><img src = "./resources/FixedSwapping.png" width="300px"></img></href></a>
-                     <a href="./resources/TvSwapping.png"><img src = "./resources/TvSwapping.png" width="300px"></img></href></a>
-                     <a href="./resources/Flocking.png"><img src = "./resources/Flocking.png" width="300px"></img></href></a>
-                 </span>
-                 </center>
-                 </td>
-             </tr>
-            </table>
-            <table align=center width=1000px>
-               <tr>
-                 <td align=center width=900px>
-                 <center>
-                 <span style="font-size:20px"><a href="./resources/FS_animation44.gif"><img src = "./resources/FS_animation44.gif" width="300px"></img></href></a>
-                     <a href="./resources/TVSS_animation44.gif"><img src = "./resources/TVSS_animation44.gif" width="300px"></img></href></a>
-                     <a href="./resources/F_animation44.gif"><img src = "./resources/F_animation44.gif" width="300px"></img></href></a>
-                 </span>
-                 </center>
-                 </td>
-             </tr>
-            </table>
-            <table align=center width=1000px>>
-                <tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:18px"><i>LEMURS can learn the control policies that replicate cooperative tasks from just observed demonstrations. For instance, LEMURS can learn how to navigate and avoid collisions in a fixed communication topology (left), time-varying topology (center) or to flock (right). (Top) Trajectories from demonstrations, (bottom) learned control policies.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
 
-                <br><br>
             <table align=center width=1000px>
-               <tr>
-                 <td align=center width=900px>
-                 <center>
-                 <span style="font-size:20px"><a href="./resources/FS_animation412.gif"><img src = "./resources/FS_animation412.gif" width="300px"></img></href></a>
-                     <a href="./resources/TVSS_animation412.gif"><img src = "./resources/TVSS_animation412.gif" width="300px"></img></href></a>
-                     <a href="./resources/F_animation412.gif"><img src = "./resources/F_animation412.gif" width="300px"></img></href></a>
-                 </span>
-                 </center>
-                 </td>
-             </tr>
-            </table>
-            <table align=center width=1000px>>
                 <tr>
-                    <td width=600px>
+                    <td width=1000px>
                       <center>
-                          <span style="font-size:18px"><i> The resulting control policies generalize to any number of robots in the team, while preserving closed-loop stability guarantees and a distributed communication topology.</i>
+                          <a href="./resources/architecture.png"><img src = "./resources/architecture.png" width="1000px"></img></href></a><br>
+                    </center>
+                    </td>
+                </tr>
+                    <td width=1000px>
+                      <center>
+                          <span style="font-size:18px"><i> A time-varying graph with unknown connectivity and node dynamics generates a dataset of trajectories (left). A self-attention encoder generates node trajectories in a feature space and computes the regularization parameters. These outputs are the input for an adjacency matrix optimization problem (middle). A fast strongly convex optimization algorithm identifies the weighted adjacency matrix that best describes the observed node trajectories (right).</i>
                     </center>
                     </td>
                 </tr>
             </table>
-
-                <br><br>
-            <table align=center width=1000px>
-               <tr>
-                 <td align=center width=900px>
-                 <center>
-                 <span style="font-size:20px"><a href="./resources/FS_animation464.gif"><img src = "./resources/FS_animation464.gif" width="300px"></img></href></a>
-                     <a href="./resources/TVSS_animation464.gif"><img src = "./resources/TVSS_animation464.gif" width="300px"></img></href></a>
-                     <a href="./resources/F_animation464.gif"><img src = "./resources/F_animation464.gif" width="300px"></img></href></a>
-                 </span>
-                 </center>
-                 </td>
-             </tr>
-            </table>
-            <table align=center width=1000px>>
-                <tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:18px"><i> We can train LEMURS with demonstrations of 4 robots and deploy in teams of more than 60 robots and still achieve a successful cooperative behavior.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-                <br><br>
-            <table align=center width=1000px>
-               <tr>
-                 <td align=center width=900px>
-                 <center>
-                 <span style="font-size:20px"><a href="./resources/FixedSwappingScalability.png"><img src = "./resources/FixedSwappingScalability.png" width="300px"></img></href></a>
-                     <a href="./resources/TvSwappingScalability.png"><img src = "./resources/TvSwappingScalability.png" width="300px"></img></href></a>
-                     <a href="./resources/FlockingScalability.png"><img src = "./resources/FlockingScalability.png" width="300px"></img></href></a>
-                 </span>
-                 </center>
-                 </td>
-             </tr>
-            </table>
-            <table align=center width=1000px>>
-                <tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:18px"><i> There is no significant difference in evaluation nor deployment when the size of the team changes.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
-                <br><br>
-            <table align=center width=1000px>
-               <tr>
-                 <td align=center width=900px>
-                 <center>
-                 <span style="font-size:20px"><a href="./resources/FixedSwappingTraining.png"><img src = "./resources/FixedSwappingTraining.png" width="300px"></img></href></a>
-                     <a href="./resources/TvSwappingTraining.png"><img src = "./resources/TvSwappingTraining.png" width="300px"></img></href></a>
-                     <a href="./resources/FlockingTraining.png"><img src = "./resources/FlockingTraining.png" width="300px"></img></href></a>
-                 </span>
-                 </center>
-                 </td>
-             </tr>
-            </table>
-            <table align=center width=1000px>>
-                <tr>
-                    <td width=600px>
-                      <center>
-                          <span style="font-size:18px"><i> LEMURS outperforms other learning methods in capturing the complex interactions from the task demonstrations.</i>
-                    </center>
-                    </td>
-                </tr>
-            </table>
-
+                    <br>
             <br>
 
-          
+            <table align=center width=1000px>
+                <tr>
+                    <td><a href="./resources/learning_module.png"><img style="height:500px" src="./resources/learning_module.png"/></a></td>
+                    <td><a href="./resources/optimization.png"><img style="height:400px" src="./resources/optimization.png"/></a></td>
+                </tr>
+            </table>
 
-        <hr>
-         <center><h1>Code</h1></center>
-            <table align=center width=800px>
-              <tr><center> <br>
-                <span style="font-size:28px">&nbsp;<a href='https://github.com/EduardoSebastianRodriguez/LEMURS'>[github]</a>
+            <table align=center width=1000px>
+                <tr>
+                     <td width=1000px>
+                      <center>
+                          <span style="font-size:18px"><i>The state trajectory encoder (left) consists of four blocks: (i) a fully connected layer that encodes each individual state to a feature state of a single dimension; (ii) a self-attention layer that finds the relationships among features; (iii) a fully connected series of layers that finds the distances among feature trajectories; and (iv) two separate fully connected layers to find the regularization parameters for the subsequent graph identification optimization.</i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
 
-                <span style="font-size:28px"></a></span>
-              <br>
-              </center></tr>
-          </table>
-            <br>
-          <hr>
+            <table align=center width=1000px>
+                <tr>
+                     <td width=1000px>
+                      <center>
+                          <span style="font-size:18px"><i>Besides the global convergence to the best graph topology in the smooth state trajectory sense, Algorithm 1 (right) is efficient to compute so, at each instant, sufficient iterations can be run to ensure convergence to the weighted adjacency matrix that best describes the node state trajectories defined over the Euclidean space. </i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
 
-         <center><h1>Citation</h1></center>
+                <br><br>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_50.png"><img src = "./resources/ground_truth_50.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_50.png"><img src = "./resources/discovered_50.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_50.png"><img src = "./resources/difference_50.png" width="230px"></img></href></a>
+                     <a href="./resources/bool_difference_50.png"><img src = "./resources/bool_difference_50.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i>Results from a multi-robot formation tasks, from left to right: ground-truth weighted adjacency matrix, identified weighted adjacency matrix, difference between ground-truth and identified matrices, and the same difference but with a threshold on the weights that are small so that they are zero and one otherwise. It is seen that the learned neural network is able to accurately identify all the weights, except some outliers that explain the differences in color scale. </i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+
+                <br><br>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_20.png"><img src = "./resources/ground_truth_20.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_20.png"><img src = "./resources/discovered_20.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_20.png"><img src = "./resources/difference_20.png" width="230px"></img></href></a>
+                     <a href="./resources/bool_difference_20.png"><img src = "./resources/bool_difference_20.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_40.png"><img src = "./resources/ground_truth_40.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_40.png"><img src = "./resources/discovered_40.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_40.png"><img src = "./resources/difference_40.png" width="230px"></img></href></a>
+                     <a href="./resources/bool_difference_40.png"><img src = "./resources/bool_difference_40.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_60.png"><img src = "./resources/ground_truth_60.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_60.png"><img src = "./resources/discovered_60.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_60.png"><img src = "./resources/difference_60.png" width="230px"></img></href></a>
+                     <a href="./resources/bool_difference_60.png"><img src = "./resources/bool_difference_60.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i> The neural network is only trained with a single trajectory of a single multi-robot formation graph. The neural network generalizes to different numbers of robots and formation configurations with the same density of connections, also called edge density. </i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=900px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/analysis_n.png"><img src = "./resources/analysis_n.png" width="900px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i> Multi-robot formation task: Mean Absolute Error between ground-truth and identified weighted adjacency matrices as a function of the number of robots and edge density. Each configuration is run 20 times, computing the mean and standard deviation. Diamond dashed lines are the state-of-the-art (reference [28] in the paper), whereas the circle solid lines are ours. Our proposed approach surpasses the state-of-the-art in one order of magnitude for all the configurations, considering that the neural network has only been trained with a single graph and associated trajectory.</i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+
+
+                <br><br>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_50_01.png"><img src = "./resources/ground_truth_50_01.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_50_01.png"><img src = "./resources/discovered_50_01.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_50_01.png"><img src = "./resources/difference_50_01.png" width="230px"></img></href></a>
+                     <a href="./resources/bool_difference_50_01.png"><img src = "./resources/bool_difference_50_01.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_50_04.png"><img src = "./resources/ground_truth_50_04.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_50_04.png"><img src = "./resources/discovered_50_04.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_50_04.png"><img src = "./resources/difference_50_04.png" width="230px"></img></href></a>
+                     <a href="./resources/bool_difference_50_04.png"><img src = "./resources/bool_difference_50_04.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i> Multi-robot formation task: Our approach moderately generalizes to other edge densities during evaluation because the training set only consists of a single graph with an edge density of 0.2. Top row shows a case with an edge density of 0.1, and the bottom row shows a case with an edge density of 0.4.</i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=900px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/analysis_flocking.png"><img src = "./resources/analysis_flocking.png" width="900px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i> Multi-robot flocking task: Mean Absolute Error between ground-truth and identified weighted adjacency matrices as a function of the edge density. Each configuration is run 20 times, computing the mean and standard deviation. Diamond dashed lines are the state-of-the-art (reference [28] in the paper), whereas the circle solid lines are ours. Our proposed approach surpasses the state-of-the-art in more than one order of magnitude for all the configurations. Compared to the formation task, the learned neural network achieves a good performance for the different edge densities because the training set is diverse in this aspect.</i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_1.png"><img src = "./resources/ground_truth_1.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_1.png"><img src = "./resources/discovered_1.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_1.png"><img src = "./resources/difference_1.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_2.png"><img src = "./resources/ground_truth_2.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_2.png"><img src = "./resources/discovered_2.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_2.png"><img src = "./resources/difference_2.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>
+               <tr>
+                 <td align=center width=1000px>
+                 <center>
+                 <span style="font-size:20px"><a href="./resources/ground_truth_3.png"><img src = "./resources/ground_truth_3.png" width="230px"></img></href></a>
+                     <a href="./resources/discovered_3.png"><img src = "./resources/discovered_3.png" width="230px"></img></href></a>
+                     <a href="./resources/difference_3.png"><img src = "./resources/difference_3.png" width="230px"></img></href></a>
+                 </span>
+                 </center>
+                 </td>
+             </tr>
+            </table>
+            <table align=center width=1000px>>
+                <tr>
+                    <td width=600px>
+                      <center>
+                          <span style="font-size:18px"><i> Multi-robot flocking task: The relative value among the discovered weights is correctly identified, whereas the value of these weights with respect to the ground-truth vary depending on the edge density of the graph. For sparse, medium and dense graphs the identified weights tend to be lower, similar and greater than in the ground-truth graph. Besides, the neural network predicts a greater number of cliques, as in the middle row of the figure. These behaviors require further investigation. </i>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+
+                <center><h1>Citation</h1></center>
             <table align=center width=800px>
               <tr><center> <br>
                           <span style="font-size:18px"><i>If you find our papers/code useful for your research, please cite our work as follows. </i>
               <br>
               </center></tr>
               <tr><left> <br>
-                          <span style="font-size:18px">E. Sebastian, T. Duong, N. Atanasov, E. Montijano, C. Sagues. <a href='https://github.com/EduardoSebastianRodriguez/LEMURS'>LEMURS: Learning Distributed Multi-Robot Interactions</a>. IEEE ICRA 2023.
+                          <span style="font-size:18px">E. Sebastian, T. Duong, N. Atanasov, E. Montijano, C. Sagues. <a href='https://github.com/EduardoSebastianRodriguez/LIGMRS'>Learning to Identify Graphs from Node Trajectories in Multi-Robot Networks</a>. Under review at IEEE MRS 2023.
 
-                          
+
               <br><br>
-                              <code>@article{sebastian22LEMURS,
+                              <code>@article{sebastian23LIGMRS,
                                     <br>
                                     author = {Eduardo Sebasti\'{a}n AND Thai Duong AND Nikolay Atanasov AND Eduardo Montijano AND Carlos Sag\"{u}\'{e}s},
                                   <br>
-                                  title = {{LEMURS: Learning Distributed Multi-robot Interactions}},
+                                  title = {{Learning to Identify Graphs from Node Trajectories in Multi-Robot Networks}},
                                   <br>
-                                  journal = {IEEE International Conference on Robotics and Automation},
+                                    journal={arXiv e-prints},
+                                  <br>
+                                    pages={arXiv--2307},
                                    <br>
                                     year = {2023}
                                     }
                               </code>
               </left></tr>
                   <br><br>
-              
+
           </table>
             <br>
           <hr>
@@ -476,7 +562,7 @@ code {
                     <td>
                       <left>
                 <center><h1>Acknowledgements</h1></center>
-                This work has been supported by NSF CCF-2112665 (TILOS), by the ONR Global grant N62909-19-1-2027, and via Spanish projects PID2021-125514NB-I00, PID2021-124137OBI00 and TED2021-130224BI00 funded by MCIN/AEI/10.13039/501100011033, by ERDF A way of making Europe and by the European Union NextGenerationEU/PRTR, DGA T45-20R, and Spanish grant FPU19-05700 and EST22/00253.
+                This work has been supported by NSF CCF-2112665 (TILOS) and via Spanish projects PID2021-125514NB-I00, PID2021-124137OBI00 and TED2021-130224B-I00 funded by MCIN/AEI/10.13039/501100011033, by ERDF A way of making Europe and by the European Union NextGenerationEU/PRTR, DGA T45-23R, and Spanish grant FPU19-05700 and EST22/00253.
                 <br>
                 <br>
                 This webpage template was borrowed from <a href="https://thaipduong.github.io/SE3HamDL/">https://thaipduong.github.io/SE3HamDL/</a>.
@@ -486,6 +572,5 @@ code {
         </table>
         <br><br>
 
--->
 </body>
 </html>
