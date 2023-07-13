@@ -8,6 +8,8 @@ Our code is tested with Ubuntu 20.04 and Python 3.10. It depends on the followin
 
 ```torch 1.12.1``` 
 
+```torchdiffeq 0.2.3``` 
+
 ```numpy 1.24.3```
 
 ```matplotlib 3.7.1```
