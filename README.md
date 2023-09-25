@@ -52,14 +52,14 @@ Finally, you can train or try other flocking trajectories by running ```python .
 ## Citation
 If you find our papers/code useful for your research, please cite our work as follows.
 
-E. Sebastian, T. Duong, N. Atanasov, E. Montijano, C. Sagues. [Learning to Identify Graphs from Node Trajectories in Multi-Robot Networks](https://eduardosebastianrodriguez.github.io/LIGMRS/). Under review at IEEE MRS 2023
+E. Sebastian, T. Duong, N. Atanasov, E. Montijano, C. Sagues. [Learning to Identify Graphs from Node Trajectories in Multi-Robot Networks](https://eduardosebastianrodriguez.github.io/LIGMRS/). Accepted at IEEE MRS 2023
 
  ```bibtex
-@article{sebastian23LIGMRS,
+@inproceedings{sebastian23LIGMRS,
 author = {Eduardo Sebasti\'{a}n AND Thai Duong AND Nikolay Atanasov AND Eduardo Montijano AND Carlos Sag\"{u}\'{e}s},
 title = {{Learning to Identify Graphs from Node Trajectories in Multi-Robot Networks}},
-journal = {arXiv e-prints},
-pages={arXiv--2307},
+booktitle = {IEEE International Symposium on Multi-robot \& Multi-agent Systems},
+pages={1--7},
 year = {2023}
 }
 ```
